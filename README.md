@@ -15,6 +15,8 @@
 
 [The Emacs Editor](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html#SEC_Contents)
 
+[Running Shell Commands from Emacs](https://www.gnu.org/software/emacs/manual/html_node/emacs/Shell.html)
+
 [An Introduction to Programming in Emacs Lisp](https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html#SEC_Contents)
 
 [GNU Emacs](https://www.gnu.org/software/emacs/)
