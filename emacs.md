@@ -15,6 +15,10 @@ Consult provides search and navigation commands based on the Emacs completion fu
 
 ---
 
+### [Go Packages](https://pkg.go.dev)
+
+[gopls, the Go language server](https://pkg.go.dev/golang.org/x/tools/gopls#section-readme)
+
 [Go tool - gopls](https://github.com/golang/tools/tree/master/gopls)
 
 [go-mode.el](https://github.com/dominikh/go-mode.el)
