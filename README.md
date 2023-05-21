@@ -68,6 +68,8 @@ Connect to the Emacs server named server-name. (This option is not supported on 
 Alternatively, you can set the EMACS_SOCKET_NAME environment variable to point to the server socket. (The command-line option overrides the environment variable.)
 
         emacsclient --socket-name=NAME
+        
+        emacsclient -s NAME
 
 ---
 
