@@ -9,8 +9,8 @@
 
 ;;;设置 major-mode https://github.com/dominikh/go-mode.el
 (use-package go-mode
-      :ensure t)
-      ;; :mode (("\\.go\\'" . go-mode)))
+      :ensure t
+      :mode (("\\.go\\'" . go-mode)))
 
 ;;;使用 goimports 代替 gofmt 在文件保存后自动格式化代码
 (setq gofmt-command "goimports")
