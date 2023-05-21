@@ -21,6 +21,8 @@
 
 ==
 
+[Org Mode](https://orgmode.org)
+
 [emacs org-mode 的使用](https://www.wenhui.space/docs/02-emacs/emacs_org_mode/)
 
 [Org Mode - 年轻人的第一堂时间管理课程](https://juejin.cn/post/6844904167446675469)
