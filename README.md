@@ -2,7 +2,7 @@
 
 ---
 
-##[Emacs](./emacs.md)
+## [Emacs](./emacs.md)
 
 ## Lisp
 
