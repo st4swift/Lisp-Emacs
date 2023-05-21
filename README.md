@@ -31,7 +31,7 @@
 
 ---
 
-## Emacs server emacsclient
+## Emacs server and  Emacsclient
 
 [Using Emacs as a Server](https://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html)
 
