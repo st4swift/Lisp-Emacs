@@ -10,6 +10,27 @@
 [CLiki -- a Common Lisp wiki ](https://www.cliki.net)
 
 ---
+
+## Emacs & emacs-lisp
+
+[An Introduction to Programming in Emacs Lisp](https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html#SEC_Contents)
+
+[GNU Emacs](https://www.gnu.org/software/emacs/)
+
+[GNU](https://www.gnu.org)
+
+==
+
+[Org Mode](https://orgmode.org)
+
+[emacs org-mode 的使用](https://www.wenhui.space/docs/02-emacs/emacs_org_mode/)
+
+[Org Mode - 年轻人的第一堂时间管理课程](https://juejin.cn/post/6844904167446675469)
+
+[Emacs给Go一个更好的Playground](https://www.jianshu.com/p/c5467b24ee54)
+
+---
+
 ## Emacs server emacsclient
 
 [Using Emacs as a Server](https://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html)
@@ -48,20 +69,3 @@ Alternatively, you can set the EMACS_SOCKET_NAME environment variable to point t
 
 ---
 
-## Emacs & emacs-lisp
-
-[An Introduction to Programming in Emacs Lisp](https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html#SEC_Contents)
-
-[GNU Emacs](https://www.gnu.org/software/emacs/)
-
-[GNU](https://www.gnu.org)
-
-==
-
-[Org Mode](https://orgmode.org)
-
-[emacs org-mode 的使用](https://www.wenhui.space/docs/02-emacs/emacs_org_mode/)
-
-[Org Mode - 年轻人的第一堂时间管理课程](https://juejin.cn/post/6844904167446675469)
-
-[Emacs给Go一个更好的Playground](https://www.jianshu.com/p/c5467b24ee54)
