@@ -35,6 +35,12 @@
 
 ## Emacs server and  Emacsclient
 
+```
+# emacs server and emacsclient
+alias es='emacs -nw --daemon=st-emacs'
+alias ec='emacsclient -s st-emacs'
+```
+
 [Using Emacs as a Server](https://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html)
 
 Run Emacs as a daemon, using one of the ‘--daemon’ command-line options. See [Initial Options](https://www.gnu.org/software/emacs/manual/html_node/emacs/Initial-Options.html). When Emacs is started this way, it calls server-start after initialization and does not open an initial frame. It then waits for edit requests from clients.
