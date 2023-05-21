@@ -49,7 +49,7 @@ Run Emacs as a daemon, using one of the ‘--daemon’ command-line options. See
 
 Start Emacs as a daemon: after Emacs starts up, it starts the Emacs server without opening any frames. You can then use the emacsclient command to connect to Emacs for editing. (Optionally, you can specify an explicit name for the server; if you do, you will need to specify the same name when you invoke emacsclient, via its --socket-name option, see emacsclient Options.) See Using Emacs as a Server, for information about using Emacs as a daemon. A “background” daemon disconnects from the terminal and runs in the background (‘--daemon’ is an alias for ‘--bg-daemon’).
 
-        emacd --daemon[=NAME]
+        emacs --daemon[=NAME]
 
 [emacsclient Options](https://www.gnu.org/software/emacs/manual/html_node/emacs/emacsclient-Options.html)
 
