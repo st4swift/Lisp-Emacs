@@ -1,5 +1,11 @@
 # Emacs
 ---
+## Python Programming In Emacs
+
+[Python Programming In Emacs](https://www.emacswiki.org/emacs/PythonProgrammingInEmacs#h5o-10)
+
+
+---
 
 [use-package](https://github.com/jwiegley/use-package)
 
