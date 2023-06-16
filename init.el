@@ -1,4 +1,4 @@
-;;; init.el --- Load the full configuration -*- lexical-binding: t -*-
+;;; init.el --- Load the full configuration. by st .June 2023
 
 ;;; Package repositories: Melpa, gun, org 插件仓库,包管理
 (require 'package)
