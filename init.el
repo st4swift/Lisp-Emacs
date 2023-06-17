@@ -217,6 +217,14 @@
 ;;Babel:  https://orgmode.org/worg/org-contrib/babel/intro.html
 (use-package ob-rust :ensure t)
 
+;; Org-mode
+(use-package org
+  :ensure t
+  :init
+  (org-babel-do-load-languages
+   'org-babel-load-languages '((rust . t)))
+  ;; Beautify org-mode: https://zzamboni.org/post/beautifying-org-mode-in-emacs/
+  (setq org-hide-emphasis-markers t))
 
 ;; support for markdown
 (use-package markdown-mode :ensure t)
