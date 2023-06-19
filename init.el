@@ -231,8 +231,6 @@
 
 
 
-
-
 ;;;Golang
 ;;;设置 major-mode https://github.com/dominikh/go-mode.el
 (use-package go-mode
@@ -267,7 +265,7 @@
 (use-package eglot
      :ensure t)
 (add-hook 'go-mode-hook #'eglot-ensure)  ;;Go gopls language-server [go install golang.org/x/tools/gopls@latest]
-;;rust-analyzer: [  rustup component add rust-src ] && [ rustup component add rust-analyzer ]
+;;IMPORTANCE: LSP=rust-analyzer, COMMAND: [  rustup component add rust-src ] && [ rustup component add rust-analyzer ]
 ;;https://rust-analyzer.github.io/manual.html
 (add-hook 'rust-mode-hook #'eglot-ensure) ;;Rust
 
