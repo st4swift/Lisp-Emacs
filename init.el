@@ -1,4 +1,4 @@
-;;; init.el --- Load the full configuration. by st .June 2023
+;;; init.el --- Load the full configuration -*- lexical-binding: t -*-
 
 ;;; Package repositories: Melpa, gun, org 插件仓库,包管理
 (require 'package)
@@ -117,7 +117,6 @@
 ;;   :config
 ;;   (setq whitespace-style '(face trailing)))
 
-
 ;;;====DOOM THEMES
 (use-package doom-themes
   :ensure t
@@ -174,7 +173,6 @@
 (add-hook 'prog-mode-hook #'show-paren-mode) ; 编程模式下，光标在括号上时高亮另一个括号
 
 
-
 ;;; Faster move cursor
 (defun next-ten-lines()
   "move cursor to next 10 lines"
@@ -224,7 +222,30 @@
   (org-babel-do-load-languages
    'org-babel-load-languages '((rust . t)))
   ;; Beautify org-mode: https://zzamboni.org/post/beautifying-org-mode-in-emacs/
-  (setq org-hide-emphasis-markers t))
+  (setq org-hide-emphasis-markers t)
+  ;; Enable transient mark mode
+  (transient-mark-mode 1)
+
+  ;; 设置任务流程
+  (setq org-todo-keywords
+      '((sequence "TODO(t!)" "NOT-STARTED(p!)" "IN-PROGRESS(t!)" "BLOCKED(s!)" "|" "COMPLETED(d!)" "CANCELLED(a@/!)")))
+  ;; 设置任务样式
+  (setq org-todo-keyword-faces
+     '(("NOT-STARTED" .   (:foreground "red" :weight bold))
+       ("BLOCKED" .       (:foreground "red" :weight bold))
+       ("IN-PROGRESS" .   (:foreground "orange" :weight bold))
+       ("COMPLETED" .     (:foreground "green" :weight bold))
+       ("CANCELLED" .     (:background "gray" :foreground "black"))))
+
+  ;; (setq org-todo-keywords
+  ;;       '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
+
+  ;; 设置 Org Agenda 快捷键
+  (global-set-key (kbd "C-c a") 'org-agenda))
+
+
+
+
 
 ;; support for markdown
 (use-package markdown-mode :ensure t)
@@ -265,7 +286,7 @@
 (use-package eglot
      :ensure t)
 (add-hook 'go-mode-hook #'eglot-ensure)  ;;Go gopls language-server [go install golang.org/x/tools/gopls@latest]
-;;IMPORTANCE: LSP=rust-analyzer, COMMAND: [  rustup component add rust-src ] && [ rustup component add rust-analyzer ]
+;;rust-analyzer: [  rustup component add rust-src ] && [ rustup component add rust-analyzer ]
 ;;https://rust-analyzer.github.io/manual.html
 (add-hook 'rust-mode-hook #'eglot-ensure) ;;Rust
 
@@ -289,8 +310,10 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("631c52620e2953e744f2b56d102eae503017047fb43d65ce028e88ef5846ea3b" "2e05569868dc11a52b08926b4c1a27da77580daa9321773d92822f7a639956ce" "8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a" "60ada0ff6b91687f1a04cc17ad04119e59a7542644c7c59fc135909499400ab8" default))
+ '(org-agenda-files
+   '("/Users/st/Library/Mobile Documents/com~apple~CloudDocs/Org/st_key.org"))
  '(package-selected-packages
-   '(eglot go-rename go-guru go-eldoc company-go lsp-ui lsp-mode go-mode doom-themes use-package)))
+   '(org-modern eglot go-rename go-guru go-eldoc company-go lsp-ui lsp-mode go-mode doom-themes use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
