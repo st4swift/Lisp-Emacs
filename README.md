@@ -1,10 +1,13 @@
+
+# [Orgmode](https://orgmode.org) 
+
+## [orgmode quickstart](https://orgmode.org/quickstart.html)
+
+---
 # Setup emacs 
 
 [renatoathaydes/emacs.d--init.el](https://github.com/renatoathaydes/emacs.d/blob/master/init.el)
 
-
-
----
 ---
 # Lisp-Emacs
 
